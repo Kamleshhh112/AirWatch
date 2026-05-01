@@ -236,9 +236,7 @@ app.post('/api/reports/:id/vote', authMiddleware, (req, res) => {
   res.json({ success: true, votes: report.votes });
 });
 
-// ============================================================
-//  START SERVER
-// ============================================================
+
 app.listen(PORT, () => {
   console.log(`
   ┌─────────────────────────────────────────┐
